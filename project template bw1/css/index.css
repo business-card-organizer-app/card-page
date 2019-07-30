@@ -135,6 +135,10 @@ html {
 html,
 body {
   font-family: monospace;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(131, 175, 216),#24c9e2);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: double 10px transparent;
 }
 h1,
 h2,
@@ -202,17 +206,22 @@ img {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin: auto;
+  margin: auto  0 5%;
 }
 .footer a {
+  margin-top: 7%;
   display: flex;
   font-size: 2rem;
   justify-content: center;
 }
 button {
+  
   background-color: #bce4e4;
   width: 12rem;
   border-radius: 1rem;
+  text-align: center;
+  margin-top: 4%;
+
 }
 .home .content-section {
   margin: 10px 0;
@@ -254,20 +263,30 @@ section.card-images {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
-  -webkit-transition: -webkit-transform 0.8s ease-in-out;
-  transition: transform 0.8s ease-in-out;
+ 
 }
-img:hover {
+.card-images img:hover {
   -webkit-transform: rotate(360deg);
   transform: scale(1.25, 1.25);
 }
 .image {
   position: relative;
   width: 100%;
+  
 }
 .image h2 {
   position: absolute;
   top: 200px;
   left: 0;
   width: 100%;
+}
+h2 span { 
+  color: white; 
+  font: bold 24px/45px Helvetica, Sans-Serif; 
+  letter-spacing: -1px;  
+  background: rgb(0, 0, 0); /* fallback color */
+  padding: 10px; 
+}
+h2 span.spacer {
+  padding:0 5px;
 }
