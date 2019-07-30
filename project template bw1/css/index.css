@@ -312,12 +312,16 @@ h2 span.spacer {
   }
 .info2{
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .image{
   display: flex; 
   justify-content: center;
   height: 300px;
+}
+.container-home{
+  display: flex;
+  flex-direction: column-reverse;
 }
 }
