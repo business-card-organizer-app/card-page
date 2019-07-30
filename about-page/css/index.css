@@ -284,11 +284,14 @@ h2 span.spacer {
 h1{
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 @media(max-width:500px){
   .info1{
-    display: none;
+    display: flex;
+  flex-direction: column;
+  padding-top: 2%;
   }
 .info2{
   display: flex;
